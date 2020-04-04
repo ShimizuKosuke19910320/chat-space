@@ -46,9 +46,27 @@
       }  
     }
 
-    .side-bar__group-list {
+    .side-bar__groups {
       background-color: #2f3e51;
       height: calc(100vh - 100px);
+      padding: 20px 20px 0 20px;
+
+      .side-bar__groups__group{
+
+         .side-bar__groups__group__name{
+           font-size: 15px;
+           padding-bottom: 5px;
+           color:#ffffff;
+           font-weight: bold;
+         }
+         
+         .side-bar__groups__group__message{
+           font-size: 11px;
+           padding-bottom: 40px;
+           color: #ffffff;
+           font-weight: bold;
+        }
+      }
     }
   }
 
