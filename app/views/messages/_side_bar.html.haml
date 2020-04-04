@@ -1,5 +1,13 @@
 .side-bar
  .side-bar__user-name
-  ユーザー名
+  .side-bar__user-name__top-items
+   %p.side-bar__user-name__top-items__user-name SHIMIZU
+   %ul.side-bar__user-name__top-items__menu
+    %li.side-bar__user-name__top-items__menu__new-group
+     =link_to '#' do
+      %i.fa.fa-edit
+    %li.side-bar__user-name__top-items__menu__edit-user
+     =link_to '#' do
+      %i.fa.fa-cog
  .side-bar__group-list
   グループリスト
