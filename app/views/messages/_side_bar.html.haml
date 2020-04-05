@@ -1,1 +1,22 @@
-＜サイドバー＞
+.side-bar
+ .user-name
+  .user-name__top-items
+   %p.user-name__top-items__user-name SHIMIZU
+   %ul.user-name__top-items__menu
+    %li.user-name__top-items__menu__new-group
+     =link_to '#' do
+      %i.fa.fa-edit
+    %li.user-name__top-items__menu__edit-user
+     =link_to '#' do
+      %i.fa.fa-cog
+
+ .groups
+  .groups__group
+   %p.groups__group__name グループ名
+   %p.groups__group__message まだメッセメッセージがありません
+  .groups__group
+   %p.groups__group__name グループ名
+   %p.groups__group__message まだメッセメッセージがありません
+  .groups__group
+   %p.groups__group__name グループ名
+   %p.groups__group__message まだメッセメッセージがありません
