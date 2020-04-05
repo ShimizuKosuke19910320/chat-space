@@ -36,6 +36,7 @@
               color: $white;
             }
           }
+
           &__edit-user{
             a{
               color: $white;
@@ -88,6 +89,7 @@
           font-size: 20px;
           color: $darkgray;
         }
+
         &__group-member-list{
           font-size: 12px;
           color: $gray;
@@ -138,31 +140,37 @@
       background-color: #d2d2d2;
       height: 90px;
       padding: 20px 40px;
+      
       form{
         display: flex;
-      .input-box{
-        display: flex;
-        position: relative;
-        width: 100%;
-        &__text{
-          height: 50px;
+
+        .input-box{
+          display: flex;
+          position: relative;
           width: 100%;
-          color: #434a54;
-          border-style: none;
-          padding: 0 40px 0 10px;
-        }
-        &__image{
-          cursor: pointer;
-          position: absolute;
-          top: 10px;
-          right: 10px;
-          font-size: 1.3rem;
-          &__file{
-            display: none;
-          }
-          }
+
+            &__text{
+              height: 50px;
+              width: 100%;
+              color: #434a54;
+              border-style: none;
+              padding: 0 40px 0 10px;
+            }
+
+            &__image{
+              cursor: pointer;
+              position: absolute;
+              top: 10px;
+              right: 10px;
+              font-size: 1.3rem;
+
+                &__file{
+                  display: none;
+                }
+            }
         }
       }
+
       .submit-btn{
         width: 100px;
         height: 50px;
