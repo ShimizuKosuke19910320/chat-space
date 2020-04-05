@@ -1,7 +1,24 @@
 .chat-main
  .chat-main__group-info
-  トップ
+  .chat-main__group-info__left-items
+   .chat-main__group-info__left-items__group-name TECHCAMP
+   .chat-main__group-info__left-items__group-member-list shimizu morita sameeha
+  =link_to '#' do
+   .chat-main__group-info__right-items edit
  .chat-main__message-list
-  ミドル
- .chat-main__message-form
-  ボトム
+  .chat-main__message-list__info
+   %p.chat-main__message-list__info__member shimizu
+   %p.chat-main__message-list__info__date 2020/03/20(Fri) 19:00:00
+  %p.chat-main__message-list__text Thank you!!!
+  .chat-main__message-list__info
+   %p.chat-main__message-list__info__member morita
+   %p.chat-main__message-list__info__date 2020/04/01(Wed) 19:00:00
+  %p.chat-main__message-list__text Hello!!!
+ .form
+  %form.new_message
+   .input-box
+    %input{type: "text", class: "input-box__text", placeholder:'type a message'}
+    %label{class:"input-box__image"}
+     =icon('fas','image')
+     %input{type:"file", class:"input-box__image__file"}
+   %input{type:"submit", class:"submit-btn"}
