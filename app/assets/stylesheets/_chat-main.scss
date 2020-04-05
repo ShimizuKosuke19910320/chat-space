@@ -1,4 +1,6 @@
 
+@import "variable";
+
 .wrapper {   
   height: 100vh;
   width: 100vw;
@@ -7,10 +9,10 @@
   .side-bar {
     width: 300px;
     height: 100vh;
-    background-color: #253141;
+    background-color: $darkblue;
 
     .side-bar__user-name {
-      background-color: #253141;
+      background-color: $darkblue;
       height: 100px;
       display: flex;
       align-items: center;
@@ -23,7 +25,7 @@
         justify-content: space-between;
         font-weight: bold;
         font-size: 16px;
-        color:#ffffff;
+        color:$white;
 
         &__menu{
           display: flex;
@@ -34,12 +36,12 @@
           &__new-group{
             margin-right: 5px;
             a{
-              color: #ffffff;
+              color: $white;
             }
           }
           &__edit-user{
             a{
-              color: #ffffff;
+              color: $white;
             }
           }
         }
@@ -56,14 +58,14 @@
          .side-bar__groups__group__name{
            font-size: 15px;
            padding-bottom: 5px;
-           color:#ffffff;
+           color:$white;
            font-weight: bold;
          }
 
          .side-bar__groups__group__message{
            font-size: 11px;
            padding-bottom: 40px;
-           color: #ffffff;
+           color: $white;
            font-weight: bold;
         }
       }
@@ -72,12 +74,12 @@
 
   .chat-main {
     width: calc(100vw - 300px);
-    background-color: #ffffff;
+    background-color: $white;
 
     .chat-main__group-info {
       height: 100px;
       padding: 0 40px;
-      background-color: #ffffff;
+      background-color: $white;
       display: flex;
       justify-content: space-between;
 
@@ -87,12 +89,12 @@
         .chat-main__group-info__left-items__group-name{
           margin-bottom: 15px;
           font-size: 20px;
-          color: #333333;
+          color: $darkgray;
         }
         .chat-main__group-info__left-items__group-member-list{
           //display: flex;
           font-size: 12px;
-          color: #999999;
+          color: $gray;
         }
       }
 
@@ -102,7 +104,7 @@
         margin-top: 28px;
         right: 40px;
         font-size: 16px;
-        color: #38aef0;
+        color: $lightblue;
       }
     }
     
@@ -116,7 +118,7 @@
         display: flex;
 
         .chat-main__message-list__info__member{
-          color: #333333;
+          color: $darkgray;
           font-size: 16px;
           font-weight: bold;
           padding-right: 10px;
@@ -124,7 +126,7 @@
         }
 
         .chat-main__message-list__info__date{
-          color: #999999;
+          color: $gray;
           font-size: 12px;
         }
       }
@@ -170,8 +172,8 @@
         height: 50px;
         padding: 0 30px;
         margin-left: 15px;
-        background-color: #38aef0;
-        color: #ffffff;
+        background-color: $lightblue;
+        color: $white;
         cursor: pointer;
       }
     }
