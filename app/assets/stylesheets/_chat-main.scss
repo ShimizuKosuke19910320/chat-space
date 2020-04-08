@@ -7,7 +7,10 @@
     width: 300px;
     height: 100vh;
     background-color: $darkblue;
-
+    a{
+      text-decoration: none;
+      color: $white;
+    }
     .user-name {
       background-color: $darkblue;
       height: 100px;
@@ -45,30 +48,30 @@
         }
       }  
     }
-
     .groups {
       background-color: #2f3e51;
       height: calc(100vh - 100px);
       padding: 20px 20px 0 20px;
 
-      &__group{
-
+      .group{
+        margin-bottom: 40px;
+ 
         &__name{
-           font-size: 15px;
-           padding-bottom: 5px;
-           color:$white;
-           font-weight: bold;
+            color: $white;
+            font-size: 15px;
+            font-weight: bold; 
+            margin-bottom: 5px;
          }
 
          &__message{
            font-size: 11px;
-           padding-bottom: 40px;
            color: $white;
            font-weight: bold;
         }
       }
     }
-  }
+}
+
 
   .chat-main {
     width: calc(100vw - 300px);

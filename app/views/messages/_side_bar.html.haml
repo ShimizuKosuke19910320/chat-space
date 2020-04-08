@@ -10,14 +10,11 @@
     %li.user-name__top-items__menu__edit-user
      =link_to edit_user_path(current_user) do
       =icon('fas', 'cog', class: 'icon')
-
  .groups
-  .groups__group
-   %p.groups__group__name グループ名
-   %p.groups__group__message まだメッセメッセージがありません
-  .groups__group
-   %p.groups__group__name グループ名
-   %p.groups__group__message まだメッセメッセージがありません
-  .groups__group
-   %p.groups__group__name グループ名
-   %p.groups__group__message まだメッセメッセージがありません
+  -current_user.groups.each do |group|
+   .group
+   = link_to '#' do
+    .group__name
+    = group.name
+    .group__message
+    メッセージはまだありません。
