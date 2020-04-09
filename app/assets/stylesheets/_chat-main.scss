@@ -85,19 +85,20 @@
       justify-content: space-between;
 
       &__left-items{
-        margin-top: 35px;
-
+        float: left;
+        width: calc(100% - 40px);
         &__group-name{
-          margin-bottom: 15px;
           font-size: 20px;
-          color: $darkgray;
+          padding: 35px 0 0 0;
+          color:$darkgray;
         }
 
         &__group-member-list{
           font-size: 12px;
+          padding: 15px 0 0 0;
           color: $gray;
         }
-    }
+      }
 
       &__right-items{
         height: 40px;
@@ -106,6 +107,9 @@
         right: 40px;
         font-size: 16px;
         color: $lightblue;
+        a{
+          text-decoration: none;
+        }
       }
   }//group-info
     
