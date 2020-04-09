@@ -7,18 +7,7 @@
    .group-info__right-items edit
 
  .message-list
-  .message-list__info
-   %p.message-list__info__member shimizu
-   %p.message-list__info__date 2020/03/20(Fri) 19:00:00
-  %p.message-list__text Thank you!!!
-  .message-list__info
-   %p.message-list__info__member morita
-   %p.message-list__info__date 2020/04/01(Wed) 19:00:00
-  %p.message-list__text Hello!!!
-  .message-list__info
-   %p.message-list__info__member sameeha
-   %p.message-list__info__date 2020/06/24(Wed) 19:00:00
-  %p.message-list__text Great!!!
+  = render @messages
 
  .form
   .type_message
