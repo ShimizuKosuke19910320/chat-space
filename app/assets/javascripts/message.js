@@ -54,7 +54,15 @@ $(function(){
     })
     .done(function(data){
       var html = buildHTML(data);
+      $('.message-list').append(html);
+      $('form')[0].reset();
+      $(".form__submit").removeAttr("disabled");
+      $('.message-list').animate({scrollTop: $('.message-list')[0].scrollHeight}, 'fast');
     })
-    
+    .fail(function() {
+      alert("メッセージ送信に失敗しました");
+      $(".form__submit").removeAttr("disabled");
+    });
+
   })
 })
