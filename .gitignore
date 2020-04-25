@@ -18,3 +18,5 @@
 
 #画像はGithubコミット対象外
 public/uploads/*
+
+config/secrets.yml
